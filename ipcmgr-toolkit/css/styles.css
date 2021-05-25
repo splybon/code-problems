@@ -1,0 +1,116 @@
+/* =============================================================================
+    Duplicate what is in public/index.html for the demos
+    ========================================================================== */
+body {
+  background: #f0f0f0;
+}
+
+.mod-demo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* =============================================================================
+    Content Loading Overlay
+    Apply this attribute to an element you want to make slightly opaque while
+    an async operation is taking place, like a list of search results.
+    ========================================================================== */
+
+[data-content-loading] {
+  position: relative;
+}
+[data-content-loading]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.625);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease all;
+}
+[data-content-loading="true"]::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =============================================================================
+    Sort Indicators
+
+    `.sortable`
+    Apply this class to an element (ideally a <button>) which serves as a
+    trigger for sorting. Modifier classes communicate state of sorting, whether
+    ascending or descending.
+
+    `.unsortable`
+    Apply to a textual element to indicate sort direction that is not configurable.
+    ========================================================================== */
+
+.sortable {
+  position: relative;
+  /* Ideally your `.sortable` element is a <button> for semantics sake, so we'll
+          make sure to clear any native <button> styles */
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+  /* add space for sort icons */
+  padding-right: 14px;
+}
+.sortable:hover {
+  cursor: pointer;
+}
+.sortable::before,
+.sortable::after {
+  content: "";
+  opacity: 0.333;
+  position: absolute;
+  right: 3px;
+  /* We'll draw our triangles with CSS */
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.sortable::before {
+  border-bottom: 4px solid #4a4a4a;
+  top: 4px;
+}
+.sortable::after {
+  border-top: 4px solid #4a4a4a;
+  top: 10px;
+}
+.sortable--asc:before,
+.sortable--desc:after {
+  opacity: 1;
+}
+
+.unsortable-asc,
+.unsortable-desc {
+  position: relative;
+}
+.unsortable-asc::after,
+.unsortable-desc::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -14px;
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.unsortable-asc::after {
+  border-bottom: 4px solid #4a4a4a;
+}
+.unsortable-desc::after {
+  border-top: 4px solid #4a4a4a;
+}

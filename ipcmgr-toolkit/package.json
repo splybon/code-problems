@@ -1,0 +1,25 @@
+{
+  "name": "@package/ipcmgr-toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "module": "src/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "webpack --mode production",
+    "test": "../../node_modules/jest/bin/jest.js ./toolkit/src/ --config ../../jest.config.js",
+    "test:watch": "../../node_modules/jest/bin/jest.js ./toolkit/src/ --config ../../jest.config.js --watch"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": "",
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.0"
+  }
+}

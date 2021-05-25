@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="pagination-summary"
+>
+  <strong>
+    25
+     - 
+    50
+  </strong>
+   of 
+  <strong>
+    1,000
+  </strong>
+    result
+  s
+</div>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="pagination__body"
+>
+  <div
+    className="pagination__pages"
+  >
+    <Pager
+      bsClass="pagination"
+      onSelect={[Function]}
+    >
+      <PagerItem
+        disabled={true}
+        eventKey="previous"
+        next={false}
+        previous={false}
+      >
+        <Icon
+          name="chevron_left"
+          style={Object {}}
+        />
+      </PagerItem>
+      <PagerItem
+        disabled={false}
+        eventKey="next"
+        next={false}
+        previous={false}
+      >
+        <Icon
+          name="chevron_right"
+          style={Object {}}
+        />
+      </PagerItem>
+    </Pager>
+  </div>
+  <div
+    className="pagination__summary"
+  >
+    <PaginationSummary
+      end={25}
+      start={1}
+      totalItems={1000}
+    />
+  </div>
+</div>
+`;

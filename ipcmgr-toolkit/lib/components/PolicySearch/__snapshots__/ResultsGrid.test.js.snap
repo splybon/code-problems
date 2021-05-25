@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with results 1`] = `
+<Table
+  bordered={false}
+  bsClass="table"
+  className="search__results"
+  condensed={false}
+  data-content-loading={false}
+  hover={true}
+  responsive={false}
+  striped={false}
+>
+  <thead>
+    <tr>
+      <th
+        key="Quote ID"
+      >
+        <button
+          className="search__sort sortable"
+          onClick={[Function]}
+          type="button"
+        >
+          Quote ID
+        </button>
+      </th>
+      <th
+        key="Policy #"
+      >
+        <button
+          className="search__sort sortable"
+          onClick={[Function]}
+          type="button"
+        >
+          Policy #
+        </button>
+      </th>
+      <th
+        key="Carrier ID"
+      >
+        Carrier ID
+      </th>
+      <th
+        key="Product"
+      >
+        Product
+      </th>
+      <th
+        key="Name"
+      >
+        <button
+          className="search__sort sortable"
+          onClick={[Function]}
+          type="button"
+        >
+          Name
+        </button>
+      </th>
+      <th
+        key="Address"
+      >
+        Address
+      </th>
+      <th
+        key="Status"
+      >
+        <button
+          className="search__sort sortable"
+          onClick={[Function]}
+          type="button"
+        >
+          Status
+        </button>
+      </th>
+      <th
+        key="Effective"
+      >
+        <button
+          className="search__sort sortable sortable--desc"
+          onClick={[Function]}
+          type="button"
+        >
+          Effective
+        </button>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="exampleid"
+      onClick={[Function]}
+    >
+      <td>
+        quotenum
+      </td>
+      <td>
+        policynum
+      </td>
+      <td />
+      <td>
+        product label
+      </td>
+      <td>
+        insuredName
+      </td>
+      <td>
+        street1
+      </td>
+      <td>
+        policyState
+      </td>
+      <td>
+        12/02/2003
+      </td>
+    </tr>
+  </tbody>
+</Table>
+`;

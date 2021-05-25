@@ -1,0 +1,8 @@
+:root {
+  --theme-agnostic-base-white: #fff;
+  --theme-agnostic-border-grey: #ddd;
+  --theme-agnostic-legal-deadline-renewed: #32a9f5;
+  --theme-agnostic-light-grey: #ececec;
+  --theme-agnostic-dark-grey: #4a4a4a;
+  --theme-agnostic-medium-grey: #999;
+}
